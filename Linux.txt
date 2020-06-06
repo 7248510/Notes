@@ -1,0 +1,4 @@
+#Linux Notes(The notes are designed terminal usage)
+Some notes are from <b>Stackoverflow/forums</b>
+Emptying trash on Cent
+rm -rf ~/.local/share/Trash/files/*
