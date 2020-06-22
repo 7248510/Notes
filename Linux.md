@@ -16,12 +16,12 @@
     <br>firewall-cmd --get-active-zones
     <br>Open 3306 or your custom MySQL port & Mongo
     <br>sudo firewall-cmd --zone=public --add-port=3306/tcp --permanent
-    <br><br><br>sudo firewall-cmd --zone=public --add-port=27017/tcp --permanent
-    <br><br>reload sudo firewall-cmd --reload
+    <br>sudo firewall-cmd --zone=public --add-port=27017/tcp --permanent
+    <br>reload sudo firewall-cmd --reload
     <br>sudo systemctl restart mysqld && sudo systemctl restart mongod
 
-# Debian
-If you cannot update your packages find your sources list.
+# Debian 10
+If you cannot update your packages/find your sources list.
 https://wiki.debian.org/SourcesList
 
 # Note sources/Credit:
