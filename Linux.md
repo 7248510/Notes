@@ -1,5 +1,4 @@
-#Linux Notes(The notes are designed terminal usage)
-Some notes are from <b>Stackoverflow/forums/blogs</b>
+# Linux Notes(The notes are designed terminal usage)
 Emptying trash on Cent
 rm -rf ~/.local/share/Trash/files/*
 For MongoDB and MySQL you have to edit their config files to allow remote access
@@ -19,3 +18,12 @@ sudo firewall-cmd --zone=public --add-port=3306/tcp --permanent
 sudo firewall-cmd --zone=public --add-port=27017/tcp --permanent
 reload sudo firewall-cmd --reload
 sudo systemctl restart mysqld && sudo systemctl restart mongod
+
+# Debian
+If you cannot update your packages find your sources list.
+https://wiki.debian.org/SourcesList
+
+# Note sources:
+https://www.tecmint.com
+https://stackoverflow.com/
+Various documentation pages
