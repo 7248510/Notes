@@ -20,7 +20,7 @@
     <br>reload sudo firewall-cmd --reload
     <br>sudo systemctl restart mysqld && sudo systemctl restart mongod
 # Debian 10
-If you cannot update your packages/find your sources list.
+If you cannot update your packages/find your sources list.<br>
 https://wiki.debian.org/SourcesList
 # Note sources/Credit:
 <br>https://www.tecmint.com
