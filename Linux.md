@@ -22,7 +22,15 @@
 # Debian 10
 If you cannot update your packages/find your sources list.<br>
 https://wiki.debian.org/SourcesList
+
+# Security Onion
+<br>Bridged & Host network settings
+<br>sudo dhclient -v -r
+<br>ip a | grep enp
+<br>sudo ifconfig INTERFACE ip/subnet(10.x.x.x/x) netmask [255.x.x.x] broadcast 10.x.x.255 up
+<br>sudo ifconfig enp0s8 192.168.56.2/24 netmask 255.0.0.0 broadcast 192.168.56.255 up [Example]
 # Note sources/Credit:
 <br>https://www.tecmint.com
 <br>https://stackoverflow.com/
+<br>https://www.computerhope.com
 <br>Various documentation pages
