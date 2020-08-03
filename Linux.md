@@ -29,6 +29,8 @@ https://wiki.debian.org/SourcesList
 <br>ip a | grep enp
 <br>sudo ifconfig INTERFACE ip/subnet(10.x.x.x/x) netmask [255.x.x.x] broadcast 10.x.x.255 up
 <br>sudo ifconfig enp0s8 192.168.56.2/24 netmask 255.0.0.0 broadcast 192.168.56.255 up [Example]
+<br>Security onion requires a <b>router(PfSense)</b>, I attempted to configure Security Onion without a router and it didn't work!
+<br>It's insane how much is logged, with an IDS. Its amazing how a port scan lights up an IDS.
 # Note sources/Credit:
 <br>https://www.tecmint.com
 <br>https://stackoverflow.com/
