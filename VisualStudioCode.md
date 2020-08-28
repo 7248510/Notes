@@ -7,12 +7,11 @@ Remove the Java extension
 Remove the Python extension
  
 ## Using MSVC without extensions
-* Disabling the IntelliSense engine takes away a lot of features/functionality but the syntax highlighting works :)
-* You cannot debug in VSC if you use this trick
-* The terminal tab displays powershell, after you type a character the tab reverts to cmd
-* If you want debugging functinality follow the offical guide
-* If you'd like normal debugging/source code level? Use Visual Studio community's debugger or fix the extension
-* Alternative windows debuggers(these will show assembly) include Windbg, Ollydbg, Cutter, x64 debugger, Immunity Debugger
+### What your losing
+ * Disabling the IntelliSense engine takes away a lot of features/functionality but the syntax    highlighting works :)
+ * You cannot debug in VSC if you use this trick
+ * The terminal tab displays powershell, after you type a character the tab reverts to cmd
+ * If you want debugging functionality follow the offical guide
 <br>In the event Microsoft's C/C++ extension doesn't add cl/MSVC or you'd like to use MSVC without the extension here's a guide.
 <br>Using the windows search bar look up "Developer Command Prompt for VS 2019", right click the shortcut and view the target.
 <br>The target field should match below, unless you changed the install directory, the same steps apply.
@@ -24,7 +23,7 @@ Remove the Python extension
 <br>%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tools\VsDevCmd.bat"
 <br>The comspec value should match the target field of the short cut.
 <br>Now that you have your new bat file. Edit VSC'S main settings
-<br>GUI = ctrl+,     The JSON is much easier to work with, I couldn't find terminal.integrated.shell.windows, I found "terminalintegrated.automationShell.windows" which doesn't work
+<br>GUI = ctrl+, The JSON is much easier to work with, I couldn't find terminal.integrated.shell.windows, I found "terminalintegrated.automationShell.windows" which doesn't work
 <br>JSON = ctrl + shift(left/right) + p, Preferences: Open Settings (JSON)
 <br>The second line of the json should display "terminal.integrated.shell.windows": "copy the location of your newly created bat"
 <br>Below is my example/what I'm using
@@ -46,4 +45,6 @@ debugging, IntelliSense and some others that weren't mentioned/I didn't use
 * WinDBG(Binary level/assembly instruction/Windows)
 * Immunity Debugger(Binary level/assembly instruction/Windows)
 * x86/x64 Debugger(Binary level/assembly instruction/Windows)
+* Radre2(Binary level/assembly instruction/GUI equivalent is Cutter/Windows)
+* Ollydbg(Binary level/assembly instruction/Windows)
 * Printing lines as you go
