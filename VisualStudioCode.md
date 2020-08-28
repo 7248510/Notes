@@ -4,12 +4,13 @@ After using Vim & Notepad ++ I prefer a minimal environement, as a result here a
 Remove the Java extension
 ## Disabling Python syntax/highlighting
 Remove the Python extension
-### What your losing:
+ ## Using MSVC without extensions
+ ### What your losing:
  * Disabling the IntelliSense engine takes away a lot of features/functionality but the syntax    highlighting works :)
  * You cannot debug in VSC if you use this trick
  * The terminal tab displays powershell, after you type a character the tab reverts to cmd
  * If you want debugging functionality follow the offical guide
- ## Using MSVC without extensions
+ ### Guide starts
 <br>In the event Microsoft's C/C++ extension doesn't add cl/MSVC or you'd like to use MSVC without the extension here's a guide.
 <br>Using the windows search bar look up "Developer Command Prompt for VS 2019", right click the shortcut and view the target.
 <br>The target field should match below, unless you changed the install directory, the same steps apply.
@@ -35,8 +36,8 @@ Remove the Python extension
 <br>The shortcut target's arguments worked perfectly in the sense that it displays the correct working directory and successfully links the Winapi
 <br>If you try to add cl to Window's path/edit systems varibles and add cl.exe to your path the files you'll run into linking issues
 ### Features taken away:
-debugging, IntelliSense and some others that weren't mentioned/I didn't use 
-### Alternative debugging options
+Debugging, IntelliSense and some others that weren't mentioned/I didn't use 
+### Alternative debugging options:
 * Editing Visual Studio Code's JSON file and editing the C++ extension 
 * Using Visual Studio(IDE) to debug
 * Using NetBeans
