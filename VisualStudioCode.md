@@ -2,16 +2,14 @@
 After using Vim & Notepad ++ I prefer a minimal environement, as a result here are my notes
 ## Disabling Java syntax/highlighting
 Remove the Java extension
-
 ## Disabling Python syntax/highlighting
 Remove the Python extension
- 
-## Using MSVC without extensions
-### What your losing
+### What your losing:
  * Disabling the IntelliSense engine takes away a lot of features/functionality but the syntax    highlighting works :)
  * You cannot debug in VSC if you use this trick
  * The terminal tab displays powershell, after you type a character the tab reverts to cmd
  * If you want debugging functionality follow the offical guide
+ ## Using MSVC without extensions
 <br>In the event Microsoft's C/C++ extension doesn't add cl/MSVC or you'd like to use MSVC without the extension here's a guide.
 <br>Using the windows search bar look up "Developer Command Prompt for VS 2019", right click the shortcut and view the target.
 <br>The target field should match below, unless you changed the install directory, the same steps apply.
