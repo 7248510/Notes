@@ -21,8 +21,8 @@ Remove the Python extension
 <br>Create a bat file where ever you'd like, I created the bat file in my Visual Studio directory*/Tools
 <br>You can name the bat file anything.
 <br>Paste the following into the bat file
-@echo off  
-%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tools\VsDevCmd.bat"  
+@echo off\s\s
+%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tools\VsDevCmd.bat"\s\s 
 <br>The comspec value should match the target field of the short cut.
 <br>Now that you have your new bat file. Edit VSC'S main settings
 <br>GUI = ctrl+,     The JSON is much easier to work with, I couldn't file terminal.integrated.shell.windows, I found "terminalintegrated.automationShell.windows" which doesn't work
@@ -47,5 +47,4 @@ debugging, IntelliSense and some others that weren't mentioned/I didn't use
 * WinDBG(Binary level/assembly instruction/Windows)
 * Immunity Debugger(Binary level/assembly instruction/Windows)
 * x86/x64 Debugger(Binary level/assembly instruction/Windows)
-
 * Printing lines as you go
