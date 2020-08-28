@@ -1,13 +1,12 @@
-# Disabling auto complete
-
-
-# Disabling Java syntax/highlighting
+# Tips to making VSC as minimal as possible
+After using Vim & Notepad ++ I prefer a minimal environement, as a result here are my notes
+## Disabling Java syntax/highlighting
 Remove the Java extension
 
-# Disabling Python syntax/highlighting
+## Disabling Python syntax/highlighting
 Remove the Python extension
  
-# Using MSVC without extensions
+## Using MSVC without extensions
 * Disabling the IntelliSense engine takes away a lot of features/functionality but the syntax highlighting works :)
 * You cannot debug in VSC if you use this trick
 * The terminal tab displays powershell, after you type a character the tab reverts to cmd
@@ -25,7 +24,7 @@ Remove the Python extension
 %comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tools\VsDevCmd.bat"\s\s 
 <br>The comspec value should match the target field of the short cut.
 <br>Now that you have your new bat file. Edit VSC'S main settings
-<br>GUI = ctrl+,     The JSON is much easier to work with, I couldn't file terminal.integrated.shell.windows, I found "terminalintegrated.automationShell.windows" which doesn't work
+<br>GUI = ctrl+,     The JSON is much easier to work with, I couldn't find terminal.integrated.shell.windows, I found "terminalintegrated.automationShell.windows" which doesn't work
 <br>JSON = ctrl + shift(left/right) + p, Preferences: Open Settings (JSON)
 <br>The second line of the json should display "terminal.integrated.shell.windows": "copy the location of your newly created bat"
 <br>Below is my example/what I'm using
@@ -38,9 +37,9 @@ Remove the Python extension
 <br>LaunchDevCmd.bat launches and goes to Visual Studio's editor directory. Example "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community"
 <br>The shortcut target's arguments worked perfectly in the sense that it displays the correct working directory and successfully links the Winapi
 <br>If you try to add cl to Window's path/edit systems varibles and add cl.exe to your path the files you'll run into linking issues
-## Features taken away:
+### Features taken away:
 debugging, IntelliSense and some others that weren't mentioned/I didn't use 
-## Alternative options
+### Alternative debugging options
 * Editing Visual Studio Code's JSON file and editing the C++ extension 
 * Using Visual Studio(IDE) to debug
 * Using NetBeans
