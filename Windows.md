@@ -12,3 +12,9 @@
   <br>In my tweaking Mandatory ASLR fixed my problem, I didn't need to change Bottom-up ASLR(which is on by default).
   <br>https://github.com/git/git-scm.com/issues/1081
   
+* Rearming windows server 19
+  <br>https://sid-500.com/2017/08/08/windows-server-2016-evaluation-how-to-extend-the-trial-period/
+  <br>slmgr -dlv = seeing status
+  <br>slmgr -rearm = reboot Windows Server to get an extra 180, you can do this up to six times.
+  <br>After your evaluations up you'll have 10 additional days with the OS.
+  
