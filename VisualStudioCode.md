@@ -1,6 +1,6 @@
 # Tips to making VSC as minimal as possible
 After using Vim & Notepad ++ I prefer a minimal environement, as a result here are my notes.
-<br>The process of changing your settings json file has changed. Refer to the following Stackoverflow post regarding your settings file.[Visual Studio Code settings](https://stackoverflow.com/questions/34977789/cannot-change-visual-studio-code-settings).
+<br>The process of changing your settings json file has changed. Refer to the following Stackoverflow post regarding your settings file. [Visual Studio Code settings](https://stackoverflow.com/questions/34977789/cannot-change-visual-studio-code-settings).
 ## Disabling Java syntax/highlighting
 Remove the Java extension
 ## Disabling Python syntax/highlighting
