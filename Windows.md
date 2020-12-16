@@ -19,6 +19,6 @@
   <br>After your evaluations up you'll have 10 additional days with the OS.
   
 * Ethernet adapter
-<br>Problem: Having to renable your(my) ethernet adapter to reach my servers. Solution: Disable/uncheck allow device('s) to save power.<br>The tab is in the device managers power management tab.
+<br>Problem: Having to renable your(my) ethernet adapter to reach my servers. <br>Solution: Disable/uncheck allow device('s) to save power.The tab is in the device managers power management tab.
 <br>https://answers.microsoft.com/en-us/windows/forum/windows_10-networking/why-do-i-have-to-reset-my-ethernet-adapter-daily/32669e92-2211-46fe-a823-ac121212a99c
 <br>Device manager > Ethernet adapter > power management.
