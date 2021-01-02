@@ -3,7 +3,7 @@ After using Vim & Notepad ++ I prefer a minimal environement, as a result here a
 <br>The process of changing your settings json file has changed. Refer to the following Stackoverflow post regarding your settings file. [Visual Studio Code settings](https://stackoverflow.com/questions/34977789/cannot-change-visual-studio-code-settings).
 ## Remove Git colors
 ~~Navigate to VSC'S settings and uncheck "Git > Decorations:"~~
-Disable Git integration(I use bash/CLI). Git still shows change when you are working in a Git repository(VSC) I thought decorations would fix the issue. :(<br>
+Disable Git integration(I use bash/CLI). Git still shows change when you are working in a Git repository(VSC) I thought disabling decorations would fix the issue. :(<br>
 To disable Git navigate to VSC'S settings and search "Git: Enabled", uncheck the checkmark. That removes Git's integration with VSC.
 ## Disabling Java syntax/highlighting
 Remove the Java extension
