@@ -1,5 +1,5 @@
 # Tips to making VSC as minimal as possible
-After using Vim & Notepad ++ I prefer a minimal environement, as a result here are my notes.
+After using Vim & Notepad ++ I prefer a minimal environment, as a result here are my notes.
 <br>The process of changing your settings json file has changed. Refer to the following Stackoverflow post regarding your settings file. [Visual Studio Code settings](https://stackoverflow.com/questions/34977789/cannot-change-visual-studio-code-settings).
 ## Remove Git colors
 ~~Navigate to VSC'S settings and uncheck "Git > Decorations:"~~
@@ -11,7 +11,7 @@ Remove the Java extension
 Remove the Python extension
  ## Using MSVC without extensions
  ### What your losing:
- * Disabling the IntelliSense engine takes away a lot of features/functionality but the syntax    highlighting works :)
+ * Disabling the IntelliSense engine takes away a lot of features/functionality but the syntax highlighting works :)
  * You cannot debug in VSC if you use this trick
  * The terminal tab displays powershell, after you type a character the tab reverts to cmd
  * If you want debugging functionality follow the offical guide
