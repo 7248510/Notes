@@ -32,8 +32,12 @@ https://wiki.debian.org/SourcesList
 <br>Security onion requires a <b>router(PfSense)</b>, I attempted to configure Security Onion without a router and it didn't work!
 <br>It's insane how much is logged, with an IDS. 
 <br>Seeing a port scan while your IDS is logging is amazing(granted your the one conducting the scan). Sidenote; its not stealthy at all...
+# Fedora
+<br>nmcli is on Fedora by default(Server)
+<br>sudo dnf install NetworkManager-tui | to install nmtui(the GUI of nmcli)
 # Note sources/Credit:
 <br>https://www.tecmint.com
 <br>https://stackoverflow.com/
 <br>https://www.computerhope.com
 <br>Various documentation pages
+
