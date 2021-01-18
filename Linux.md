@@ -8,7 +8,7 @@
     <br>If bind-address isn't there you're fine. (sudo vi /etc/my.cnf)
     <br>You can also add it "bind-address=0.0.0.0" or "bind-address=127.0.0.1" for local host
     <br>I created another user with remote privileges. If you're using root you have to enable remote logins(When your installing MySQL I think you can enable remote                  
-    <br>root...I wouldn't enable remote root. It's better to create another user)
+  root...I wouldn't enable remote root. It's better to create another user)
     <br>sudo vi /etc/mongod.conf
     <br>change "bindIP: 127.0.0.1" to "bindIP: 0.0.0.0"
     <br>Then restart the service
