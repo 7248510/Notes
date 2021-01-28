@@ -12,10 +12,10 @@
 <br>docker run -d --name nodeTest -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=changeMe -e MONGO_INITDB_ROOT_PASSWORD=horriblePassword mongo (URI with local host)
 <br>docker run -d --name nodeTest -p (LOCALIP/interfaceIP):27017:27017 -e MONGO_INITDB_ROOT_USERNAME=changeMe -e MONGO_INITDB_ROOT_PASSWORD=horriblePassword mongo (uri with the entered interfaceIP)
 # Start,stop,delete docker container
-docker rm /testing (remove/delete a container)
+docker rm /testing (remove/delete a container)<br>
 docker rm --force testing (Stop an active container)
-docker start NAMEOFCONTAINER
-docker stop NAMEOFCONTAINER
+<br>docker start NAMEOFCONTAINER
+<br>docker stop NAMEOFCONTAINER
 <br><b>Credits:
   <br>https://stackoverflow.com/questions/17157721/how-to-get-a-docker-containers-ip-address-from-the-host
   <br>https://osric.com/chris/accidental-developer/2017/08/running-centos-in-a-docker-container/
