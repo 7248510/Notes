@@ -5,10 +5,10 @@
 # MongoDB
 <br>For hosting a local instance of MongoDB on Windows(you need to bind the external port to a local port):
 <br>Pull the image with "docker pull mongo"
-<br>Creates the new container: <br>"docker run -p 27017:27017 --name testing -d mongo:latest -e MONGO_INITDB_ROOT_USERNAME=changeME -e MONGO_INITDB_ROOT_PASSWORD=weakPassword"
+<br>Creates the new container: <br>"docker run -d --name nodeTest -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=changeMe -e MONGO_INITDB_ROOT_PASSWORD=horriblePassword mongo"
 <br>If you need the IP address of the container enter "docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container_name_or_id"
 <br>URI for the container(The ip address was found with the command above)
-<br>Sample URI:mongodb://changeMe:horriblePassword@localInterface:27017/?authSource=admin(local interface)<br>mongodb://changeMe:horriblePassword@127.0.0.1:27017/?authSource=admin(localhost/127.0.0.1)
+<br>Sample URIS:<br>mongodb://changeMe:horriblePassword@localInterface:27017/?authSource=admin(local interface)<br>mongodb://changeMe:horriblePassword@127.0.0.1:27017/?authSource=admin(localhost/127.0.0.1)
 <br>docker run -d --name nodeTest -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=changeMe -e MONGO_INITDB_ROOT_PASSWORD=horriblePassword mongo (URI with local host)
 <br>docker run -d --name nodeTest -p (LOCALIP/interfaceIP):27017:27017 -e MONGO_INITDB_ROOT_USERNAME=changeMe -e MONGO_INITDB_ROOT_PASSWORD=horriblePassword mongo (uri with the entered interfaceIP)
 # Start,stop,delete docker container
