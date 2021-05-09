@@ -43,6 +43,12 @@ https://wiki.debian.org/SourcesList
 # Fedora
 <br>nmcli is on Fedora by default(Server)
 <br>sudo dnf install NetworkManager-tui | to install nmtui(the GUI of nmcli)
+
+# Kali
+<br>To disable auto suggestion uninstall the plugin.<br>Via the instructions in the repository.https://github.com/zsh-users/zsh-autosuggestions#enable-asynchronous-mode
+
+
+
 # Note sources/Credit:
 <br>https://www.tecmint.com
 <br>https://stackoverflow.com/
