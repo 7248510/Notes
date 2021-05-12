@@ -46,8 +46,7 @@ https://wiki.debian.org/SourcesList
 
 # Kali
 <br>To disable auto suggestion uninstall the plugin.<br>Via the instructions in the repository.https://github.com/zsh-users/zsh-autosuggestions#enable-asynchronous-mode
-
-
+<br>To install Visual Studio Code.<br>Download the debian package, navigate to your downloads folder and in a terminal execute<br>sudo apt install ./code_versionnumber (while in the packages download location. if not specifiy the folder location)
 
 # Note sources/Credit:
 <br>https://www.tecmint.com
