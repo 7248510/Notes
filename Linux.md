@@ -45,7 +45,20 @@ https://wiki.debian.org/SourcesList
 <br>sudo dnf install NetworkManager-tui | to install nmtui(the GUI of nmcli)
 
 # Kali
-<br>To disable auto suggestion uninstall the plugin.<br>Via the instructions in the repository.https://github.com/zsh-users/zsh-autosuggestions#enable-asynchronous-mode
+<br>To disable auto suggestion uninstall the plugin.<br>Via the instructions in the repository.https://github.com/zsh-users/zsh-autosuggestions#enable-asynchronous-mode<br>
+command = "sudo nano ~/.zshrc"
+REMOVE THIS SECTION OF "~/.zshrc" or COMMENT them out 
+<code>
+if [ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
+    . /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+    # change suggestion color
+    ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#999'
+fi
+<code>
+<br>then type in "sudo rm -rf ~/.zsh/zsh-autosuggestions"
+ <br> Auto suggestion will be disabled!
+
+
 <br>To install Visual Studio Code.<br>Download the debian package, navigate to your downloads folder and in a terminal execute<br>sudo apt install ./code_versionnumber (while in the packages download location. if not specifiy the folder location)
 
 # Note sources/Credit:
