@@ -48,13 +48,13 @@ https://wiki.debian.org/SourcesList
 <br>To disable auto suggestion uninstall the plugin.<br>Via the instructions in the repository.https://github.com/zsh-users/zsh-autosuggestions#enable-asynchronous-mode<br>
 command = sudo nano command
 Edit this in "~/.zshrc" or COMMENT the code
-<code>
+"
 if [ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
     . /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
     # change suggestion color
     ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#999'
 fi
-<code>
+"
 <br>then type in "sudo rm -rf ~/.zsh/zsh-autosuggestions"
  <br> Auto suggestion will be disabled!
 
