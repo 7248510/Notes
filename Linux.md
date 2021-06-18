@@ -46,7 +46,7 @@ https://wiki.debian.org/SourcesList
 
 # Kali
 <br>To disable auto suggestion uninstall the plugin.<br>Via the instructions in the repository.https://github.com/zsh-users/zsh-autosuggestions#enable-asynchronous-mode<br>
-command = "sudo nano ~/.zshrc"
+command = sudo nano ~/.zshrc
 REMOVE THIS SECTION OF "~/.zshrc" or COMMENT them out 
 <code>
 if [ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
