@@ -60,7 +60,7 @@ sudo dpkg-reconfigure openssh-server
 <br>I ran into an error "rescue-ssh.target is a disabled or a static unit, not starting it."<br>
 I fixed the error by removing the default keys & restarting Kali.<br>
 sudo rm /etc/ssh/ssh_host_* (This command will remove the default keys)<br>
-sudo reboot -h now(restarts Kali)
+sudo reboot -h now(restarts Kali)<br>
 sudo nano /etc/ssh/sshd_config<br>
 Uncomment the following lines:<br>
 Port 22<br>
