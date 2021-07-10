@@ -29,7 +29,7 @@
   3. Add the service that you'd like unblock to the zone of your choice (sudo firewall-cmd --zone=public --add-service=http)
 # Debian 10
 If you cannot update your packages/find your sources list.<br>
-https://wiki.debian.org/SourcesList
+[Source list](https://wiki.debian.org/SourcesList)
 
 # Security Onion
 <br>Bridged & Host network settings
@@ -45,10 +45,38 @@ https://wiki.debian.org/SourcesList
 <br>sudo dnf install NetworkManager-tui | to install nmtui(the GUI of nmcli)
 
 # Kali
-<br>To disable auto suggestion uninstall the plugin.<br>Via the instructions in the repository.https://github.com/zsh-users/zsh-autosuggestions#enable-asynchronous-
+<br>To disable auto suggestion uninstall the plugin.<br>Via the instructions in the repository.[GitHub Repo](https://github.com/zsh-users/zsh-autosuggestions#enable-asynchronous-)
  <b>I'll update the instructions with images. Markdown did not work!</b>
  <br> Auto suggestion will be disabled!
 <br>To install Visual Studio Code.<br>Download the debian package, navigate to your downloads folder and in a terminal execute<br>sudo apt install ./code_versionnumber (while in the packages download location. if not specifiy the folder location)
+<br>
+Enable SSH:<br>
+If you'd like to regen the keys follow the steps below.<br>If you don't all you need to is edit the config file and enable certain services.
+<br>
+Back up the default keys into a folder.<br>
+sudo mv /etc/ssh/ssh_host_* /etc/ssh/backupKeys/
+<br> Reconfigure the keys:<br>
+sudo dpkg-reconfigure openssh-server
+<br>I ran into an error "rescue-ssh.target is a disabled or a static unit, not starting it."<br>
+I fixed the error by removing the default keys & restarting Kali.<br>
+sudo rm /etc/ssh/ssh_host_* (This command will remove the default keys)<br>
+sudo reboot -h now(restarts Kali)
+sudo nano /etc/ssh/sshd_config<br>
+Uncomment the following lines:
+<li>Port 22</li>
+<li>AddressFamily any</li>
+<li>ListenAddress 0.0.0.0</li>
+<li>PubkeyAuthentication yes</li>
+<li>PasswordAuthentication yes</li><br>
+Enable the following services:
+sudo systemctl start ssh.socket<br>
+sudo systemctl status ssh.socket<br>
+sudo systemctl enable ssh.socket<br>
+sudo systemctl restart ssh.service<br>
+sudo systemctl status ssh.service<br>
+sudo systemctl enable ssh.service<br>
+^ Enables persistence(run every startup).
+[LMGSecurity is the source article!](https://www.lmgsecurity.com/enable-start-ssh-kali-linux/)
 
 # Note sources/Credit:
 <br>https://www.tecmint.com
