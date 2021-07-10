@@ -62,12 +62,12 @@ I fixed the error by removing the default keys & restarting Kali.<br>
 sudo rm /etc/ssh/ssh_host_* (This command will remove the default keys)<br>
 sudo reboot -h now(restarts Kali)
 sudo nano /etc/ssh/sshd_config<br>
-Uncomment the following lines:
-<li>Port 22</li>
-<li>AddressFamily any</li>
-<li>ListenAddress 0.0.0.0</li>
-<li>PubkeyAuthentication yes</li>
-<li>PasswordAuthentication yes</li><br>
+Uncomment the following lines:<br>
+Port 22<br>
+AddressFamily any<br>
+ListenAddress 0.0.0.0<br>
+PubkeyAuthentication yes<br>
+PasswordAuthentication yes<br>
 Enable the following services:
 sudo systemctl start ssh.socket<br>
 sudo systemctl status ssh.socket<br>
