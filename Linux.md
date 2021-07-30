@@ -46,6 +46,8 @@ If you cannot update your packages/find your sources list.<br>
 <br>Keep in mind I'm the only one in my lab I do not know what Security Onion will generate if used in PROD.
 <br>Two NICS are active. These Security Onion notes are designed for an air gapped lab.
 ![Security Onion Proc](securityOnion2NIC.PNG)
+## Sample Nmap Scan in Security Onion 2
+![Sample Nmap Scan](nmapScan.PNG)
 # Fedora
 <br>nmcli is on Fedora by default(Server)
 <br>sudo dnf install NetworkManager-tui | to install nmtui(the GUI of nmcli)
