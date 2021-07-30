@@ -44,7 +44,7 @@ If you cannot update your packages/find your sources list.<br>
 <br>Upgrading Security Onion 1 to 2 revealed that the hardware requirements changed for production mode.
 <br>=>12GB'S of ram, 4 CPU cores, 200GB'S dynamic(I allocated 100 virtual gb's Security Onion is actually using 9GB'S)
 <br>Keep in mind I'm the only one in my lab I do not know what Security Onion will generate if used in PROD.
-<br>Two NICS are active. These Security Onion notes are designed fr an air gapped lab.
+<br>Two NICS are active. These Security Onion notes are designed for an air gapped lab.
 ![Security Onion Proc](securityOnion2NIC.PNG)
 # Fedora
 <br>nmcli is on Fedora by default(Server)
