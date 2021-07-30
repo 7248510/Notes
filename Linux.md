@@ -38,8 +38,14 @@ If you cannot update your packages/find your sources list.<br>
 <br>sudo ifconfig INTERFACE ip/subnet(10.x.x.x/x) netmask [255.x.x.x] broadcast 10.x.x.255 up
 <br>sudo ifconfig enp0s8 192.168.56.2/24 netmask 255.0.0.0 broadcast 192.168.56.255 up [Example]
 <br>Security onion requires a <b>router(PfSense)</b>, I attempted to configure Security Onion without a router and it didn't work!
-<br>It's insane how much is logged, with an IDS. 
-<br>Seeing a port scan while your IDS is logging is amazing(granted your the one conducting the scan). Sidenote; its not stealthy at all...
+<br>It's incredible how much is logged, with an IDS. 
+<br>Seeing a port scan while your IDS is logging is amazing(granted your the one conducting the scan).
+<br>See NIC Config(Proc must be marked as allow all)
+<br>Upgrading Security Onion 1 to 2 revealed that the hardware requirements changed for production mode.
+<br>=>12GB'S of ram, 4 CPU cores, 200GB'S dynamic(I allocated 100 virtual gb's Security Onion is actually using 9GB'S)
+<br>Keep in mind I'm the only one in my lab I do not know what Security Onion will generate if used in PROD.
+<br>Two NICS are active. These Security Onion notes are designed fr an air gapped lab.
+![Security Onion Proc](securityOnion2NIC.PNG)
 # Fedora
 <br>nmcli is on Fedora by default(Server)
 <br>sudo dnf install NetworkManager-tui | to install nmtui(the GUI of nmcli)
