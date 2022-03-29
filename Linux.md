@@ -86,6 +86,14 @@ sudo systemctl enable ssh.service<br>
 ^ Enables persistence(run every startup).
 [LMGSecurity is the source article!](https://www.lmgsecurity.com/enable-start-ssh-kali-linux/)
 
+
+# Debian Missing firmware & Broken sources list
+* [Ethernet Broadcom packages](https://packages.debian.org/stretch/firmware-bnx2x)
+* [Example sources.list](https://wiki.debian.org/SourcesList) -- If you have the GUI use the GUI options
+* [General solution](https://www.techbrackets.com/install-missing-firmware-debian/)
+* [Ethtool Usage(used for finding your network firmware)](https://linuxhint.com/ethtool_commands_examples/)
+
+
 # Note sources/Credit:
 <br>https://www.tecmint.com
 <br>https://stackoverflow.com/
