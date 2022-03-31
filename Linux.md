@@ -93,6 +93,13 @@ sudo systemctl enable ssh.service<br>
 * [General solution](https://www.techbrackets.com/install-missing-firmware-debian/)
 * [Ethtool Usage(used for finding your network firmware)](https://linuxhint.com/ethtool_commands_examples/)
 
+# Debian XFCE4 greyed out buttons
+1. Polkit "apt install policykit-1-gnome"
+2. cd /etc/polkit-1/localauthority/50-local.d/ & create a file with touch shutdownreboot.pkla(it can be named anything I believe)
+3. [Add the following fields & Credit](https://forums.linuxmint.com/viewtopic.php?f=90&t=310737&sid=5317fd892f862690055d67c5e2ea7d6e&start=20)
+4. It will most likely prompt your for authentication everytime you rdp into the machine. I am uploading my file with the bypass/commands
+5. The article [Polkit Explained](https://www.starnet.com/xwin32kb/authentication-is-required/) will explain how authentication on Polkit's Linux settings
+6. The file will be uploaded in the notes repository
 
 # Note sources/Credit:
 <br>https://www.tecmint.com
