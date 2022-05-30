@@ -63,6 +63,14 @@ If you'd like to regen the keys follow the steps below.<br>If you don't all you 
 <br>
 Back up the default keys into a folder.<br>
 sudo mv /etc/ssh/ssh_host_* /etc/ssh/backupKeys/
+
+```
+sudo mkdir /etc/ssh/backupkeys && sudo mv /etc/ssh/ssh_host_* /etc/ssh/backupskeys
+sudo reboot -h now
+
+sudo systemctl start ssh.service
+sudo systemctl start ssh.socket
+```
 <br> Reconfigure the keys:<br>
 sudo dpkg-reconfigure openssh-server
 <br>I ran into an error "rescue-ssh.target is a disabled or a static unit, not starting it."<br>
