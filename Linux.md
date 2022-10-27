@@ -95,6 +95,19 @@ sudo systemctl enable ssh.service<br>
 [LMGSecurity is the source article!](https://www.lmgsecurity.com/enable-start-ssh-kali-linux/)
 
 
+
+# Fix xrdp black screen
+'''
+Luis Pereira:
+nano /etc/xrdp/startwm.sh
+Add in the very top:
+unset DBUS_SESSION_BUS_ADDRESS
+unset XDG_RUNTIME_DIR
+then:
+sudo systemctl restart xrdp
+'''
+https://askubuntu.com/questions/1245020/xrdp-on-ubuntu-20-04
+
 # Debian Missing firmware & Broken sources list
 * [Ethernet Broadcom packages](https://packages.debian.org/stretch/firmware-bnx2x)
 * [Example sources.list](https://wiki.debian.org/SourcesList) -- If you have the GUI use the GUI options
